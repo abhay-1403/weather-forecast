@@ -1,7 +1,7 @@
 //Complete the Weather API Backend part using openweathermap api
 function getWeather(cityName){
     var key = '7361e6a431124b3243741dd60496ee3c';
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&appid='+key )
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&appid='+key)
     // https://api.openweathermap.org/data/2.5/weather?q=kolkata&appid=7361e6a431124b3243741dd60496ee3c
     .then(function(resp){
         return resp.data;
